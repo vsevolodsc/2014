@@ -15,8 +15,4 @@ class Player < Oracle
     puts " Player guessed #{player_guess}. Oracle guessed #{oracle_number}"
   end
 
-  def incr_guess(no_guesses)
-    no_guesses += 1
-    no_guesses
-  end
 end

@@ -15,7 +15,7 @@ class SequentialPlayer < Player
     enter_message(@name)
     track_guess(player_guess, oracle.generated_number)
     while check(oracle, player_guess)
-      incr_guess(@attempts)
+      @attempts += 1
       player_guess += 1
       puts "\n Silly mortal ! You will not defeat the mighty Oracle!"
     end

@@ -10,5 +10,5 @@ player_array[2] = SequentialPlayer.new('Loh')
 
 player_array.each {|i|
   i.guess
-  puts " The number of guesses it took you, #{i.name} = #{i.incr_guess(i.attempts)}"}
-
+  puts " The number of guesses it took you, #{i.name} = #{i.attempts}"
+  puts (i.attempts).sort}

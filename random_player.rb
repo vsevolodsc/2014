@@ -13,7 +13,7 @@ class RandomPlayer < Player
     enter_message(@name)
     track_guess(player_guess, oracle.generated_number)
     while check(oracle, player_guess)
-      incr_guess(@attempts)
+        @attempts += 1
         puts "#{@name} guessed #{player_guess} and failed to beat the mighty Oracle !"
         player_guess = rand(1..100)
     end
